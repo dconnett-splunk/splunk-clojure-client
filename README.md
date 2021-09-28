@@ -1,6 +1,6 @@
 # Project Name
 
-splunk-clojure-client is ....
+splunk-clojure-client is a simple REST client for Splunk written Clojure
 
 
 ## Project Goals
@@ -8,22 +8,15 @@ splunk-clojure-client is ....
 TODO
 
 
-## Community
-
-[... has a mailing list](https://groups.google.com/forum/#!forum/clojure-...). Feel free to join it and ask any questions you may have.
-
-To subscribe for announcements of releases, important changes and so on, please follow [@ClojureWerkz](https://twitter.com/#!/clojurewerkz) on Twitter.
-
-
 ## Project Maturity
 
-... is *very* young.
+... is simply a test at the moment.
 
 
 
 ## Artifacts
 
-... artifacts are [released to Clojars](https://clojars.org/splunk-clojure-client). If you are using Maven, add the following repository
+... artifacts might be released [released to Clojars](https://clojars.org/splunk-clojure-client). If you are using Maven, add the following repository
 definition to your `pom.xml`:
 
 ``` xml
@@ -49,10 +42,11 @@ With Maven:
     </dependency>
 
 
-
 ## Getting Started
 
-Please refer to our [Getting Started guide](...). Don't hesitate to join our [mailing list](https://groups.google.com/forum/#!forum/clojure-...) and ask questions, too!
+git clone https://github.com/splunk/splunk-clojure-client.git
+cd splunk-clojure-client
+lein repl
 
 
 ## Documentation & Examples
@@ -68,19 +62,12 @@ splunk-clojure-client is built from the ground up for Clojure 1.5.1 and up.
 
 ## Continuous Integration Status
 
-[![Continuous Integration status](https://secure.travis-ci.org/clojurewerkz/splunk-clojure-client.png)](http://travis-ci.org/clojurewerkz/splunk-clojure-client)
-
+N/A
 
 
 ## ... Is a ClojureWerkz Project
 
-splunk-clojure-client is part of the [group of Clojure libraries known as ClojureWerkz](http://clojurewerkz.org), together with
- * [Monger](http://clojuremongodb.info)
- * [Langohr](https://github.com/michaelklishin/langohr)
- * [Elastisch](https://github.com/clojurewerkz/elastisch)
- * [Welle](http://clojureriak.info)
- * [Neocons](http://clojureneo4j.info)
- * [Quartzite](https://github.com/michaelklishin/quartzite) and several others.
+I am not sure what Clojurewerkz is yet.
 
 
 ## Development
@@ -99,7 +86,4 @@ with your changes and all tests pass, submit a pull request on GitHub.
 
 ## License
 
-Copyright (C) 2021 Michael S. Klishin, Alex Petrov.
-
-Double licensed under the [Eclipse Public License](http://www.eclipse.org/legal/epl-v10.html) (the same as Clojure) or
-the [Apache Public License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
+All rights reserved at the moment. Need to pick an open source license.
