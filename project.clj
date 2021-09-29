@@ -17,6 +17,8 @@
                  [org.clojure/tools.reader "RELEASE"] ;; for :as :clojure
                  [ring/ring-codec "RELEASE"] ;; for :as :x-www-form-urlencoded
                  [org.clojure/data.json "2.4.0"]
+                 [luposlip/json-schema "0.3.2"]
+
 
                  [http-kit "2.5.3"]
 
@@ -36,4 +38,10 @@
                  [org.clojure/tools.logging "1.1.0"]
                  [ch.qos.logback/logback-classic "1.2.6"]
                  ;; template
-                 [me.shenfeng/mustache "1.1"]])
+                 [me.shenfeng/mustache "1.1"]]
+                   
+                 
+        :profiles {:uberjar {:aot :all}
+                              :reveal {:dependencies [[vlaaad/reveal "1.3.219"]]
+                                       :repl-options {:nrepl-middleware [vlaaad.reveal.nrepl/middleware]}
+                                       :jvm-opts ["-Dfile.encoding=UTF8" "-Dvlaaad.reveal.prefs={:font-size 14}"]}})

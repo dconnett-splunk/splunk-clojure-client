@@ -51,7 +51,7 @@
 (def splunk-search-uri (str splunk-base-uri "/search/jobs"))
 
 ;; Splunks session delete endpoint.
-(defn splunk-delete-auth-uri [token] (str (splunk-base-uri) "/authentication/httpauth-tokens/" token))
+(defn splunk-delete-auth-uri [token] (str splunk-base-uri "/authentication/httpauth-tokens/" token))
 
 ;; Creates params for authentication. Change these for your environment.
 (def splunk-auth-map
@@ -132,9 +132,9 @@
   (client/post splunk-auth-uri (task4-params)))
 
 ;; Another cookie test. Doesn't work...
-(binding [clj-http.core/*cookie-store* (clj-http.cookies/cookie-store)]
-  (refresh-session-key)
-  (task4-post))
+;; (binding [clj-http.core/*cookie-store* (clj-http.cookies/cookie-store)]
+;;   (refresh-session-key)
+;;   (task4-post))
 
 ;; Create a cookie store to be used for subsequent calls.
 (def my-cs (clj-http.cookies/cookie-store))
